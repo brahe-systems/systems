@@ -161,6 +161,10 @@ nav a:hover{
     float:left;
 }
 
+#footer span{
+    color: grey;
+}
+
 @keyframes spin {
     from {
         transform:rotate(0deg);

@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="description" content="Cycle Parking Assistant">
-    <title>Cycle Parking Assistant</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/cpa.css">
+    <script src="js/cpa.js"></script>
 </head>
-<body style="background-color: black">
-<p>&#128692;</p>
+
+<body onload="initPage()">
+    <div id="home" class="section home">
+        <div class="nav-container">
+            <h1>Cycling Parking Assistant</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+                <a href="#">Sign In</a>
+                <a href="#" class="sign-up btn" href="#">Sign Up</a>
+            </nav>
+        </div>
+        <svg class="background-blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+            <path
+                d="M480.8 168.7C524.5 210.6 543.4 285.2 528.9 353.7 514.5 422.2 466.7 484.5 409.7 502.2 352.6 519.8 286.4 492.8 237.5 458.3 188.6 423.8 157 381.8 142.2 331.7 127.4 281.7 129.2 223.5 158.3 184.9 187.4 146.2 243.7 127.1 306.1 122.2 368.5 117.3 437.1 126.7 480.8 168.7Z"
+                fill="#8bcdcd" /></svg>
+        <img id="banner-img" src="res/banner-img.png">
+        <div class="tagline-container">
+            <h2>Get Cycle Parking<br>Right</h2>
+            <p>Save time and money by getting cycle parking right with our easy<br>to use tool. Asses an existing plan
+                or figure out what provisions<br>you need to add.</p>
+            <a class=btn href="#how-it-works">Find out how</a>
+        </div>
+    </div>
+    <div id="benefits" class="section">
+        <p class="temp">Benefits go here</p>
+    </div>
+    <div id="how-it-works" class="section">
+        <p class="temp">How it works goes here</p>
+    </div>
+    <div id="about" class="section">
+        <p class="temp">about goes here</p>
+    </div>
+    <div id="footer">
+        <p>Brahe Systems Ltd.</p>
+        <a href="https://brahe.uk"><img src="res/brahe-logo-red.png"></a>
+    </div>
 </body>
+
 </html>

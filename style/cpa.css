@@ -1,0 +1,171 @@
+html{
+    
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0.3);
+    width: 100%;
+    height: 70px;
+    /* box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1); */
+}
+
+h1{
+    float: left;
+    line-height: 70px;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    margin-left: 100px;
+}
+
+nav {
+    float: right;
+    height: 70px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+    display: inline-block;
+    text-align: center;
+    transition: all .1s
+}
+
+nav a:hover{
+    color: #1365ff;
+}
+
+.sign-up{
+    margin-right: 50px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #1b54bf;
+}
+
+#banner-img {
+    position: absolute;
+    right: 60px;
+    top: 0px;
+    z-index:-1;
+    pointer-events:none;
+}
+
+#vid-container{
+    height: fit-content;
+}
+
+.background-blob{
+    position: absolute;
+    height: 150%;
+    right: -30%;
+    top: -40%;
+    z-index:-1;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: blur(70px);
+}
+
+.tagline-container {
+    margin-left: 100px;
+    padding-top: 250px;
+}
+
+.tagline-container h2{
+    font-family: 'Lusitana', serif;
+    font-size: 60px;
+}
+
+.tagline-container p, .tagline-container a{
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tagline-container .btn{
+    margin-top: 30px;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: #1365ff;
+    color: white;
+    padding: 0px 20px;
+    width: fit-content;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.section{
+    padding-top:70px;
+    height: 100vh;
+}
+
+.temp{
+    border-radius: 10px;
+    background-color: #c05f5f;
+    font-family: 'Sora', sans-serif;
+    color: white;
+    padding: 0px 20px;
+    width: fit-content;
+    line-height: 50px;
+    display: inline-block;
+    margin-left:45%;
+    margin-top: 22%;
+}
+
+#footer{
+    background-color: #ccc;
+    height: 100px;
+    width: 100vw;
+}
+
+#footer img{
+    height: 64px;
+    filter:brightness(0);
+    float:right;
+    margin-right: 100px;
+    margin-top: 18px;
+}
+
+#footer img:hover{
+    cursor: pointer;
+    filter:brightness(0.9);
+}
+
+#footer p{
+    margin:0px;
+    padding:0px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    line-height: 100px;
+    margin-left: 100px;
+    float:left;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
